@@ -16,7 +16,7 @@
 Use TDD to create an `Exhibit` and a `Patron` class that respond to the following interaction pattern:
 
 ```ruby
-pry(main)> require './lib/exhibit'
+pry(main)> require './lib/exhibit' 
 # => true
 
 pry(main)> require './lib/patron'
