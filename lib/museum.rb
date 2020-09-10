@@ -25,4 +25,26 @@ class Museum
   def admit(patron)
     @patrons << patron
   end
+
+  def patrons_by_exhibit_interest
+    patrons_by_exhibit = Hash.new
+    # patron_interests = @patrons.map do |patron|
+    #   patron.interests
+    # end.flatten
+    # patron_interests
+
+
+    @exhibits.each do |exhibit|
+      @patrons.find_all do |patron|
+        if interest == exhibit.name
+          patrons_by_exhibit[exhibit] = patron
+        end
+      end
+    end
+    patrons_by_exhibit
+
+  end
+
+
+
 end
