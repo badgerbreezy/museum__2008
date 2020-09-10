@@ -46,7 +46,7 @@ class MuseumTest < Minitest::Test
     assert_equal [imax], dmns.recommend_exhibits(patron_2)
   end
 
-  def test_
+  def test_it_can_admit_patrons
     dmns = Museum.new("Denver Museum of Nature and Science")
     gems_and_minerals = Exhibit.new({name: "Gems and Minerals", cost: 0})
     dead_sea_scrolls = Exhibit.new({name: "Dead Sea Scrolls", cost: 10})
