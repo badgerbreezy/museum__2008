@@ -25,7 +25,8 @@ class MuseumTest < Minitest::Test
     dmns.add_exhibit(imax)
 
     assert_equal [gems_and_minerals, dead_sea_scrolls, imax], dmns.exhibits
+    binding.pry
   end
 
-  
+
 end
